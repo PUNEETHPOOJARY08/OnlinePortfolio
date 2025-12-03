@@ -1,4 +1,4 @@
-
+/* Modal */
 .certificate-modal {
   position: fixed;
   top: 0;
@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* brings modal to front */
+  z-index: 9999;
 }
 
 .modal-content {
@@ -41,25 +41,15 @@
   border-radius: 8px;
 }
 
+/* Certificates Grid */
 .certificates-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 in one row */
+  grid-template-columns: repeat(3, 1fr); /* desktop */
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
+/* Card */
 .certificate-card {
   background: rgba(255, 255, 255, 0.05);
   padding: 1.5rem;
@@ -78,7 +68,7 @@
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
-/* ICON SAME STYLE AS INTERNSHIP */
+/* Icon */
 .certificate-icon {
   width: 70px;
   height: 70px;
@@ -90,7 +80,7 @@
   background: linear-gradient(135deg, #6a11cb, #2575fc);
 }
 
-/* TEXT */
+/* Text */
 .certificate-name {
   font-size: 1.3rem;
   font-weight: 600;
@@ -103,14 +93,67 @@
   opacity: 0.8;
 }
 
-/* REMOVE THE PURPLE SHAPE (your current issue) */
+/* Remove Badge */
 .certificate-badge {
   display: none;
 }
 
+/* Section Padding */
 .certificates {
   padding-top: 5rem;
-  padding-bottom: 7rem; /* adjust as you like */
+  padding-bottom: 7rem;
 }
 
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
+/* ======================= */
+/* Responsive Media Queries */
+/* ======================= */
+
+/* Tablets (1024px and below) */
+@media screen and (max-width: 1024px) {
+  .certificates-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile (600px and below) */
+@media screen and (max-width: 600px) {
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certificate-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .certificate-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .certificate-name {
+    font-size: 1.2rem;
+  }
+
+  .certificate-issuer {
+    font-size: 0.9rem;
+  }
+
+  .certificate-iframe {
+    height: 60vh;
+  }
+}
