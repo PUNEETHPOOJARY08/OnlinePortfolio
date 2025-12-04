@@ -101,7 +101,7 @@ const Hero = ({ scrollToSection }) => {
             <div className="avatar-glow"></div>
             <div className="avatar-content">
               <img 
-                src="/profile.jpg" 
+                src="/OnlinePortfolio/images/homephoto.jpg" 
                 alt="Puneeth K" 
                 className="avatar-image"
               />
