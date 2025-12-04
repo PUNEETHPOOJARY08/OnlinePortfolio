@@ -14,7 +14,7 @@ const Internships = () => {
         'Developed responsive and interactive web pages using HTML, CSS, and JavaScript, improving UI performance and design consistency.',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       icon: '💼',
-      certificate: '/internship-fullstack-certificate.jpg'
+      certificate: '/OnlinePortfolio/internship/Internship fullstack.jpg'
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ const Internships = () => {
         'Node.js'
       ],
       icon: '🚀',
-      certificate: '/internship-mernstack-certificate.jpg'
+      certificate: '/OnlinePortfolio/internship/Internship MERNstack.jpg'
     }
   ]
 
