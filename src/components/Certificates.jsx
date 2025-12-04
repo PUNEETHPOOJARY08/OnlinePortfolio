@@ -10,35 +10,35 @@ const Certificates = () => {
       name: 'DevOps Fundamentals',
       issuer: 'IBM',
       icon: '☁️',
-      link: '/certificates/ibm-devops-certificate.pdf'
+      link: '/OnlinePortfolio/certificates/ibm-devops-certificate.pdf'
     },
     {
       id: 2,
       name: 'CSS Certification',
       issuer: 'HackerRank',
       icon: '🎨',
-      link: '/certificates/css-certificate.pdf'
+      link: '/OnlinePortfolio/certificates/css-certificate.pdf'
     },
     {
       id: 3,
       name: 'Java Full Stack Development',
       issuer: 'Simplilearn',
       icon: '☕',
-      link: '/certificates/java-fullstack-development.pdf'
+      link: '/OnlinePortfolio/certificates/java-fullstack-development.pdf'
     },
     {
       id: 4,
       name: 'Python Certification',
       issuer: 'Certiport',
       icon: '🐍',
-      link: '/certificates/python-certificate.pdf'
+      link: '/OnlinePortfolio/certificates/python-certificate.pdf '
     },
     {
       id: 5,
       name: 'Java Full Stack Development',
       issuer: 'Infosys Springboard',
       icon: '☕',
-      link: '/certificates/java-fullstack-infosys-springboard.pdf'
+      link: '/OnlinePortfolio/certificates/java-fullstack-infosys-springboard.pdf'
     },
     {
       id: 8,
@@ -126,4 +126,3 @@ const Certificates = () => {
 }
 
 export default Certificates
-
